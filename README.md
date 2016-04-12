@@ -1,1 +1,1 @@
-# freelanceukraine.github.com
+# freelanceukraine.com
