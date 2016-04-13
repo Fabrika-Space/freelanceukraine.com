@@ -1,0 +1,703 @@
+@font-face {
+	font-family: 'kelson_sans_ruregular';
+	src: url('../fonts/kelson_sans_regular_ru-webfont.eot');
+	src: url('../fonts/kelson_sans_regular_ru-webfont.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/kelson_sans_regular_ru-webfont.woff2') format('woff2'),
+		url('../fonts/kelson_sans_regular_ru-webfont.woff') format('woff'),
+		url('../fonts/kelson_sans_regular_ru-webfont.ttf') format('truetype'),
+		url('../fonts/kelson_sans_regular_ru-webfont.svg#kelson_sans_ruregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'kelson_sans_rubold';
+	src: url('../fonts/kelson_sans_bold_ru-webfont.eot');
+	src: url('../fonts/kelson_sans_bold_ru-webfont.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/kelson_sans_bold_ru-webfont.woff2') format('woff2'),
+		url('../fonts/kelson_sans_bold_ru-webfont.woff') format('woff'),
+		url('../fonts/kelson_sans_bold_ru-webfont.ttf') format('truetype'),
+		url('../fonts/kelson_sans_bold_ru-webfont.svg#kelson_sans_rubold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'kelson_sans_rulight';
+	src: url('../fonts/kelson_sans_light_ru-webfont.eot');
+	src: url('../fonts/kelson_sans_light_ru-webfont.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/kelson_sans_light_ru-webfont.woff2') format('woff2'),
+		url('../fonts/kelson_sans_light_ru-webfont.woff') format('woff'),
+		url('../fonts/kelson_sans_light_ru-webfont.ttf') format('truetype'),
+		url('../fonts/kelson_sans_light_ru-webfont.svg#kelson_sans_rulight') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+input {
+	/*remove ios default styles for inputs*/
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	/*remove ios default border-radous for inputs*/
+	-webkit-border-radius:0;
+	-moz-border-radius:0;
+	border-radius:0;
+}
+
+* {
+  vertical-align: top;
+  /*точно не помню зачем, нужн опочитать. кажись это фикс когда при повороте екрана некоторые шрифты становятся странных размеров*/
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+}
+
+:focus {outline: none;}
+input[type="submit"]::-moz-focus-inner {border: none;}
+html, body{height:100%; width:100%; margin:0; padding:0;}
+
+body {
+	font-family: 'kelson_sans_ruregular';
+	font-size: 12px;
+	color: #9C9C9C;
+	line-height: 1;
+	background: #ff6600 url('../img/bg.jpg') no-repeat center top;
+	background-size: 100% auto;
+}
+
+img {
+	border: none;
+	max-width: 100%;
+	height: auto;
+}
+
+p {
+
+}
+
+a {
+	font-family: inherit;
+	font-size: inherit;
+	color: #7c868f;
+	font-weight: inherit;
+	font-style: inherit;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+h1, h2, h3, h4 {
+
+}
+
+h1 {
+
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
+
+h4 {
+
+}
+
+ul, ul li {
+
+}
+
+ul {
+
+}
+
+ul li {
+
+}
+
+ul li a{
+
+}
+
+ol {
+
+}
+
+ol li {
+
+}
+
+input[type="text"],
+input[type="password"] {
+
+}
+
+#all {
+	height: 100%;
+	width: 100%;
+}
+
+.section {
+
+}
+
+.innerSection {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.bgWhite {
+	background: #fff;
+}
+
+.sectionTitle {
+	font-family: 'kelson_sans_rulight';
+	font-size: 100px;
+	color: #fff;
+	line-height: 1;
+	display: block;
+	text-align: center;
+	padding: 0 0 35px 0;
+}
+
+.bgWhite .sectionTitle {
+	color: #000;
+}
+
+.btnRegistration {
+	border: 3px solid #fff;
+	display: block;
+	width: 234px;
+	height: 44px;
+	margin: 0 auto;
+	line-height: 44px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 24px;
+	color: #fff;
+	background: #3bb000;
+	box-shadow: 0 1px rgba(0,0,0,0.2);
+}
+
+.btnRegistration:hover {
+	background: #33cc00;
+	box-shadow: 0 5px 5px rgba(0,0,0,0.25);
+}
+
+/*****************/
+/******HEADER*****/
+/*****************/
+
+#header {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding-bottom: 100px;
+}
+
+.headerLeftPart {
+	float: left;
+	width: 400px;
+}
+
+.headerMainPart {
+	margin-left: 400px;
+}
+
+.mainMenu {
+
+}
+
+.mainMenu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	font-size: 0;
+}
+
+.mainMenu ul li {
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	vertical-align: top;
+	width: 25%;
+	height: 100px;
+	padding-top: 100px;
+}
+
+.mainMenu ul li a {
+	display: block;
+	font-size: 18px;
+	color: #fff;
+	text-decoration: none;
+}
+
+h1 {
+	margin: -6px 0 95px 0;
+	padding: 0;
+	font-weight: normal;
+	font-family: 'kelson_sans_rubold';
+	font-size: 127px;
+	color: #fff;
+	line-height: 120px;
+	text-transform: uppercase;
+	letter-spacing: -4px;
+	position: relative;
+	left: -6px;
+}
+
+.headerMainPart .btnRegistration {
+	margin: 0;
+}
+
+.logo {
+	margin-bottom: 74px;
+	display: inline-block;
+}
+
+.headerLeftPart .date {
+	font-size: 22px;
+	color: #fff;
+	line-height: 22px;
+	margin-bottom: 130px;
+}
+
+.registrationTimer {
+
+}
+
+.registrationTimer div {
+	font-size: 22px;
+	color: #fff;
+	line-height: 21px;
+	padding-bottom: 24px;
+}
+
+.registrationTimer span {
+	font-family: 'kelson_sans_rubold';
+	font-size: 49px;
+	color: #fff;
+}
+
+
+/*****************/
+/*****CONTENT*****/
+/*****************/
+
+#main {
+
+}
+
+#content {
+
+}
+
+/***** SPEAKERS *****/
+.section.speakers {
+	padding: 0 0 60px 0;
+}
+
+.section.speakers .sectionTitle{
+	padding-bottom: 60px;
+}
+
+.ninjaListSpeakers {
+	
+}
+
+.mainListSpeakers {
+	
+}
+
+.ninjaListSpeakers,
+.mainListSpeakers {
+	font-size: 0;
+	text-align: center;
+}
+
+.ninjaListSpeakers .item,
+.mainListSpeakers .item {
+	width: 400px;
+	display: inline-block;
+	line-height: 1;
+	margin-bottom: 90px;
+}
+
+.ninjaListSpeakers .item {
+	width: 500px;
+	margin-bottom: 120px;
+}
+
+.ninjaListSpeakers .item .photo,
+.mainListSpeakers .item .photo {
+	border-radius: 50%;
+	overflow: hidden;
+	border: 6px solid #fff;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.26);
+	width: 190px;
+	height: 190px;
+	display: inline-block;
+	margin-bottom: 20px;
+}
+
+.ninjaListSpeakers .item .photo {
+	width: 280px;
+	height: 280px;
+}
+
+.ninjaListSpeakers .item .photo img,
+.mainListSpeakers .item .photo img {
+	width: 100%;
+}
+
+.ninjaListSpeakers .item .author,
+.mainListSpeakers .item .author {
+	display: block;
+	font-size: 24px;
+	color: #fff;
+	margin-bottom: 6px;
+}
+
+.ninjaListSpeakers .item .author {
+	font-size: 36px;
+}
+
+.ninjaListSpeakers .item .title,
+.mainListSpeakers .item .title {
+	display: block;
+	font-size: 16px;
+	color: #fff;
+	margin-bottom: 30px;
+}
+
+.ninjaListSpeakers .item .desc,
+.mainListSpeakers .item .desc {
+	display: block;
+	font-size: 24px;
+	color: #fff;
+	line-height: 27px;
+	padding: 0 40px;
+}
+
+/***** AGENDA *****/
+.section.agenda {
+	padding: 0 0 98px 0;
+}
+
+.h2Agenda {
+	font-family: 'kelson_sans_rubold';
+	font-size: 30px;
+	color: #fff;
+	padding: 0 0 0 100px;
+	margin-bottom: 36px;
+	height: 30px;
+	line-height: 30px;
+}
+
+.h3Agenda {
+	font-family: 'kelson_sans_rulight';
+	font-size: 24px;
+	color: #fff;
+	padding: 0 0 0 100px;
+	margin-bottom: 36px;
+	height: 30px;
+	line-height: 30px;
+}
+
+.h3Agenda b {
+	font-weight: normal;
+	font-family: 'kelson_sans_rubold';
+	padding-left: 20px;
+}
+
+.agendaList {
+	padding-bottom: 40px;
+}
+
+.agendaList .item {
+	font-size: 0;
+	line-height: 24px;
+	padding: 5px 0;
+}
+
+.agendaList .item .time,
+.agendaList .item .author,
+.agendaList .item .title {
+	display: inline-block;
+	vertical-align: top;
+	font-family: 'kelson_sans_rulight';
+	font-size: 24px;
+	color: #fff;
+}
+
+.agendaList .item .time {
+	width: 100px;
+}
+
+.agendaList .item .author {
+	width: 290px;
+}
+
+.agendaList .item .author span {
+	background: #ff6600;
+	padding-right: 50px;
+	position: relative;
+}
+
+.agendaList .item .title {
+	padding-left: 10px;
+	width: calc(100% - 400px);
+	position: relative;
+}
+
+.agendaList .item .title:before {
+	content: '';
+	position: absolute;
+	left: -290px;
+	top: 12px;
+	z-index: -1;
+	width: 290px;
+	height: 1px;
+	display: block;
+	background: rgba(255,255,255,0.2);
+}
+
+.section.agenda .btnRegistration {
+	margin-top: 40px;
+}
+
+.icon {
+	position: relative;
+}
+.icon:before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: -10px;
+	width: 50px;
+	height: 50px;
+	display: block;
+}
+.icon.iconCoffeebreak:before {
+	background: url('../img/iconCoffeebreak.png') no-repeat left top;
+}
+.icon.iconTime:before {
+	background: url('../img/iconTime.png') no-repeat left top;
+}
+
+/***** PARTNERS *****/
+.section.partners {
+	padding: 48px 0 0 0;
+}
+
+.section.partners .sectionTitle {
+	padding: 0 0 60px 0;
+}
+
+.titlePartners {
+	display: block;
+	text-align: center;
+	font-size: 24px;
+	color: #000;
+	padding: 0 0 30px 0;
+}
+
+.containerPartners {
+	padding: 0 0 38px 0;
+	text-align: center;
+}
+
+.containerPartners img {
+	vertical-align: middle;
+	padding: 0 28px 10px 28px;
+}
+
+/***** LOCATION *****/
+.section.location {
+	padding: 64px 0 83px 0;
+}
+
+.section.location .sectionTitle,
+.section.location .txt,
+.section.location .btnRegistration {
+	margin-left: 400px;
+}
+
+.section.location .sectionTitle {
+	text-align: left;
+}
+.section.location .txt {
+	font-size: 24px;
+	color: #fff;
+	line-height: 35px;
+	padding: 0 0 45px 0;
+	margin-left: 400px;
+}
+
+
+/***** MAP *****/
+.section.map {
+	
+}
+
+.section.map .innerSection {
+	max-width: 100%;
+}
+#mapCanvas {
+	height: 500px;
+}
+
+@media screen and (max-width: 1199px) {
+	.innerSection {
+		margin: 0 10px;
+	}
+
+	#header {
+		margin: 10px 10px 0 10px;
+	}
+	h1 {
+		font-size: 80px;
+		line-height: 1;
+	}
+	.logo {
+		margin-bottom: 30px;
+	}
+	.headerLeftPart .date {
+		margin-bottom: 70px;
+	}
+	.registrationTimer div {
+		font-size: 20px;
+		padding-bottom: 16px
+	}
+	.registrationTimer span {
+		font-size: 32px;
+	}
+
+	.ninjaListSpeakers .item {
+		width: 450px;
+	}
+
+	.section.location .sectionTitle,
+	.section.location .txt,
+	.section.location .btnRegistration {
+		margin-left: 0;
+		text-align: center;
+	}
+
+	.section.location .btnRegistration {
+		margin: 0 auto;
+	}
+
+	.section.map .innerSection {
+		margin: 0;
+	}
+	#mapCanvas {
+		height: 300px;
+	}
+}
+
+@media screen and (max-width: 999px) {
+	.sectionTitle {
+		font-size: 60px;
+	}
+
+	.logo {
+		display: block;
+		text-align: center;
+	}
+	.headerLeftPart {
+		float: none;
+		width: auto;
+	}
+	.headerLeftPart .date {
+		margin-bottom: 25px;
+		text-align: center;
+	}
+	.registrationTimer {
+		text-align: center;
+	}
+	.registrationTimer div {
+		padding-bottom: 11px;
+	}
+	.headerMainPart {
+		margin-left: 0;
+	}
+	.mainMenu {
+		padding: 30px 0;
+	}
+	.mainMenu ul li {
+		width: auto;
+		display: block;
+		height: auto;
+		padding-top: 0;
+	}
+	.mainMenu ul li a {
+		text-align: center;
+		padding: 7px 0;
+		font-size: 22px;
+	}
+	h1 {
+		font-size: 38px;
+		letter-spacing: 0;
+		text-align: center;
+		position: static;
+		margin-top: 0;
+	}
+	h1 br {
+		display: none;
+	}
+	.headerMainPart .btnRegistration {
+		margin: 0 auto;
+	}
+
+	.ninjaListSpeakers .item,
+	.mainListSpeakers .item {
+		width: auto;
+	}
+	.ninjaListSpeakers .item .desc,
+	.mainListSpeakers .item .desc {
+		padding: 0;
+	}
+	.ninjaListSpeakers .item .author {
+		font-size: 24px;
+	}
+
+	.titlePartners {
+		font-family: 'kelson_sans_rubold';
+		font-size: 28px;
+	}
+	.section.location .txt {
+		font-size: 18px;
+		line-height: 1.5;
+	}
+	.containerPartners img {
+		max-width: calc(100% - 56px);
+		padding-bottom: 30px;
+	}
+
+	.agendaList .item {
+		margin-bottom: 15px;
+	}
+	.agendaList .item .title:before {
+		display: none;
+	}
+	.agendaList .item .time,
+	.agendaList .item .author,
+	.agendaList .item .title {
+		display: block;
+		width: auto;
+		padding-left: 0;
+	}
+	.agendaList .item .title {
+		font-size: 16px;
+		line-height: 1.2;
+		padding-top: 5px;
+	}
+	.h2Agenda,
+	.h3Agenda {
+		padding-left: 70px;
+	}
+}
