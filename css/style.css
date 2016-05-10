@@ -537,6 +537,12 @@ h1 {
 	margin-left: 400px;
 }
 
+.section.location .txt a {
+	color: inherit;
+	font-size: inherit;
+	font-family: inherit;
+}
+
 
 /***** MAP *****/
 .section.map {
@@ -548,6 +554,25 @@ h1 {
 }
 #mapCanvas {
 	height: 500px;
+}
+
+/***** CONTACTS *****/
+.section.contacts {
+	padding: 64px 0 83px 0;
+	text-align: center;
+}
+
+.section.contacts .txt {
+	font-size: 24px;
+	color: #fff;
+	line-height: 35px;
+	padding: 0 0 45px 0;
+}
+
+.section.contacts .txt a {
+	color: inherit;
+	font-size: inherit;
+	font-family: inherit;
 }
 
 @media screen and (max-width: 1199px) {
