@@ -269,17 +269,23 @@ h1 {
 
 }
 
-.registrationTimer div {
+.registrationTimer .titleRegistrationTimer {
 	font-size: 22px;
 	color: #fff;
 	line-height: 21px;
 	padding-bottom: 24px;
 }
 
-.registrationTimer span {
+.registrationTimer .timerToStart {
 	font-family: 'kelson_sans_rubold';
 	font-size: 49px;
 	color: #fff;
+}
+
+.registrationTimer .timerToStart span{
+	width: 55px;
+	text-align: center;
+	display: inline-block;
 }
 
 
@@ -593,11 +599,11 @@ h1 {
 	.headerLeftPart .date {
 		margin-bottom: 70px;
 	}
-	.registrationTimer div {
+	.registrationTimer .titleRegistrationTimer {
 		font-size: 20px;
 		padding-bottom: 16px
 	}
-	.registrationTimer span {
+	.registrationTimer .timerToStart {
 		font-size: 32px;
 	}
 
@@ -644,7 +650,7 @@ h1 {
 	.registrationTimer {
 		text-align: center;
 	}
-	.registrationTimer div {
+	.registrationTimer .titleRegistrationTimer {
 		padding-bottom: 11px;
 	}
 	.headerMainPart {
