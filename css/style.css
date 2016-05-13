@@ -283,7 +283,7 @@ h1 {
 }
 
 .registrationTimer .timerToStart span{
-	width: 55px;
+	min-width: 55px;
 	text-align: center;
 	display: inline-block;
 }

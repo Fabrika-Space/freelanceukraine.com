@@ -24,16 +24,14 @@ $(function(){
 
 
 	function getTimeRemaining(endtime) {
-		var t = Date.parse(endtime) - Date.parse(new Date());
-		var miliseconds = Math.floor((t / 100) % 60);
+		var t = endtime - new Date();
+		var miliseconds = Math.floor(t % 1000);
 		var seconds = Math.floor((t / 1000) % 60);
-		var minutes = Math.floor((t / 1000 / 60) % 60);
-		var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
-		var days = Math.floor(t / (1000 * 60 * 60 * 24));
+		var minutes = Math.floor((t / 1000 / 60 ) % 60);
+		var hours = Math.floor(t / 1000 / 60 / 60);
 		return {
 			'total': t,
-			//'days': days,
-			'hours': days * 24 + hours,
+			'hours': hours,
 			'minutes': minutes,
 			'seconds': seconds,
 			'miliseconds': miliseconds,
@@ -50,10 +48,10 @@ $(function(){
 		function updateClock() {
 			var t = getTimeRemaining(endtime);
 
-			hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+			hoursSpan.innerHTML = t.hours;
 			minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
 			secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
-			milisecondsSpan.innerHTML = ('0' + t.miliseconds).slice(-2);
+			milisecondsSpan.innerHTML = ('00' + t.miliseconds).slice(-3);
 
 			if (t.total <= 0) {
 				clearInterval(timeinterval);
@@ -61,7 +59,7 @@ $(function(){
 		}
 
 		updateClock();
-		var timeinterval = setInterval(updateClock, 10);
+		var timeinterval = setInterval(updateClock, 1);
 	}
 
 	//new Date(year, month, day, hours, minutes, seconds, milliseconds)
