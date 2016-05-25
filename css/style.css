@@ -516,9 +516,14 @@ h1 {
 	text-align: center;
 }
 
-.containerPartners img {
+.containerPartners a {
 	vertical-align: middle;
-	padding: 0 28px 10px 28px;
+	margin: 0 28px 10px 28px;
+	display: inline-block;
+}
+
+.containerPartners a img {
+	display: block;
 }
 
 /***** LOCATION *****/
