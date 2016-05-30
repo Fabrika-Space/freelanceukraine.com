@@ -379,6 +379,11 @@ h1 {
 	margin-bottom: 30px;
 }
 
+.ninjaListSpeakers .item .title a,
+.mainListSpeakers .item .title a{
+	color: inherit;
+}
+
 .ninjaListSpeakers .item .desc,
 .mainListSpeakers .item .desc {
 	display: block;
