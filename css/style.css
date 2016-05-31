@@ -198,6 +198,12 @@ input[type="password"] {
 	padding-bottom: 100px;
 }
 
+.headerSocialBtns {
+	position: absolute;
+	right: 0;
+	top: -69px;
+}
+
 .headerLeftPart {
 	float: left;
 	width: 400px;
@@ -254,7 +260,7 @@ h1 {
 }
 
 .logo {
-	margin-bottom: 74px;
+	margin: -69px 0 74px 0;
 	display: inline-block;
 }
 
@@ -533,7 +539,7 @@ h1 {
 
 /***** LOCATION *****/
 .section.location {
-	padding: 64px 0 83px 0;
+	padding: 64px 0 110px 0;
 }
 
 .section.location .sectionTitle,
@@ -589,6 +595,65 @@ h1 {
 	color: inherit;
 	font-size: inherit;
 	font-family: inherit;
+}
+
+.blockSocial {
+	margin-left: 400px;
+	text-align: left;
+}
+
+.titleBlockSocial {
+	margin-bottom: 26px;
+	font-family: 'kelson_sans_rulight';
+	font-size: 24px;
+	color: #fff;
+}
+
+.btnsBlockSocial {
+
+}
+
+.btnsBlockSocial a {
+	display: inline-block;
+	border: 3px solid #fff;
+	width: 148px;
+	height: 44px;
+	line-height: 44px;
+	font-family: 'kelson_sans_rulight';
+	font-size: 18px;
+	color: #fff;
+	text-decoration: none;
+	margin: 0 3px;
+}
+
+.btnsBlockSocial a:hover {
+	-webkit-box-shadow: 0 5px 5px rgba(0,0,0,0.25);
+	-moz-box-shadow: 0 5px 5px rgba(0,0,0,0.25);
+	box-shadow: 0 5px 5px rgba(0,0,0,0.25);
+}
+
+.icon_fb {
+	background: #355995;
+}
+
+.icon_fb:before {
+	content: '';
+	display: inline-block;
+	width: 42px;
+	height: 44px;
+	background: url('../img/socialBtns.png') no-repeat left top;
+}
+
+.icon_vk {
+	background: #547c9e;
+}
+
+.icon_vk:before {
+	content: '';
+	display: inline-block;
+	width: 42px;
+	height: 44px;
+	background: url('../img/socialBtns.png') no-repeat right top;
 }
 
 @media screen and (max-width: 1199px) {
