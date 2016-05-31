@@ -139,6 +139,7 @@ input[type="password"] {
 #all {
 	height: 100%;
 	width: 100%;
+	border-top: 69px solid #000;
 }
 
 .section {
@@ -598,12 +599,13 @@ h1 {
 }
 
 .blockSocial {
-	margin-left: 400px;
+	margin: 122px 0 0 400px;
 	text-align: left;
 }
 
 .titleBlockSocial {
-	margin-bottom: 26px;
+	margin-bottom: 24px;
+	display: block;
 	font-family: 'kelson_sans_rulight';
 	font-size: 24px;
 	color: #fff;
@@ -614,7 +616,6 @@ h1 {
 }
 
 .btnsBlockSocial a {
-	display: inline-block;
 	border: 3px solid #fff;
 	width: 148px;
 	height: 44px;
@@ -623,7 +624,7 @@ h1 {
 	font-size: 18px;
 	color: #fff;
 	text-decoration: none;
-	margin: 0 3px;
+	margin: 0 6px 0 0;
 }
 
 .btnsBlockSocial a:hover {
@@ -634,11 +635,14 @@ h1 {
 
 .icon_fb {
 	background: #355995;
+	display: inline-block;
 }
 
 .icon_fb:before {
 	content: '';
 	display: inline-block;
+	vertical-align: middle;
+	margin-top: -2px;
 	width: 42px;
 	height: 44px;
 	background: url('../img/socialBtns.png') no-repeat left top;
@@ -646,11 +650,14 @@ h1 {
 
 .icon_vk {
 	background: #547c9e;
+	display: inline-block;
 }
 
 .icon_vk:before {
 	content: '';
 	display: inline-block;
+	vertical-align: middle;
+	margin-top: -2px;
 	width: 42px;
 	height: 44px;
 	background: url('../img/socialBtns.png') no-repeat right top;
