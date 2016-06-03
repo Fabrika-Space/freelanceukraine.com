@@ -850,4 +850,12 @@ h1 {
 	.h3Agenda {
 		padding-left: 70px;
 	}
+	.headerSocialBtns,
+	.btnAddToGoogleCalendar:hover{
+		display: none;
+	}
+	.blockSocial {
+		margin-left: 0;
+		text-align: center;	
+	}
 }
