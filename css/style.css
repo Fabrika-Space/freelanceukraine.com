@@ -851,7 +851,7 @@ h1 {
 		padding-left: 70px;
 	}
 	.headerSocialBtns,
-	.btnAddToGoogleCalendar:hover{
+	.btnAddToGoogleCalendar{
 		display: none;
 	}
 	.blockSocial {
