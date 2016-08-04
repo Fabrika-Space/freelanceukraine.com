@@ -28,13 +28,15 @@ $(function(){
 		var miliseconds = Math.floor(t % 1000);
 		var seconds = Math.floor((t / 1000) % 60);
 		var minutes = Math.floor((t / 1000 / 60 ) % 60);
-		var hours = Math.floor(t / 1000 / 60 / 60);
+		var hours = Math.floor((t / 1000 / 60 / 60)%24);
+		var days = Math.floor(t / 1000 / 60 / 60);
 		return {
 			'total': t,
 			'hours': hours,
 			'minutes': minutes,
 			'seconds': seconds,
 			'miliseconds': miliseconds,
+			'days': days,
 		};
 	}
 
@@ -44,6 +46,7 @@ $(function(){
 		var minutesSpan = clock.querySelector('.minutes');
 		var secondsSpan = clock.querySelector('.seconds');
 		var milisecondsSpan = clock.querySelector('.miliseconds');
+		var daysSpan = clock.querySelector('.days');
 
 		function updateClock() {
 			var t = getTimeRemaining(endtime);
@@ -52,6 +55,7 @@ $(function(){
 			minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
 			secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
 			milisecondsSpan.innerHTML = ('00' + t.miliseconds).slice(-3);
+			daysSpan.innerHTML = t.days;
 
 			if (t.total <= 0) {
 				clearInterval(timeinterval);
