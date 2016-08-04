@@ -29,7 +29,7 @@ $(function(){
 		var seconds = Math.floor((t / 1000) % 60);
 		var minutes = Math.floor((t / 1000 / 60 ) % 60);
 		var hours = Math.floor((t / 1000 / 60 / 60)%24);
-		var days = Math.floor(t / 1000 / 60 / 60);
+		var days = Math.floor(t / 1000 / 60 / 60 / 24);
 		return {
 			'total': t,
 			'hours': hours,
@@ -67,7 +67,7 @@ $(function(){
 	}
 
 	//new Date(year, month, day, hours, minutes, seconds, milliseconds)
-	var deadline = new Date(2016, 9, 3, 11);
+	var deadline = new Date(2016, 8, 3, 11);
 	initializeClock('timerToStart', deadline);
 
 });
