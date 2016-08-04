@@ -55,7 +55,7 @@ $(function(){
 			minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
 			secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
 			milisecondsSpan.innerHTML = ('00' + t.miliseconds).slice(-3);
-			daysSpan.innerHTML = t.days;
+			daysSpan.innerHTML = t.days + ' дней';
 
 			if (t.total <= 0) {
 				clearInterval(timeinterval);
