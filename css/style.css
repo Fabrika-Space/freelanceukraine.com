@@ -169,6 +169,16 @@ input[type="password"] {
 	color: #000;
 }
 
+.sectionSubtitle {
+	font-family: 'kelson_sans_rulight';
+	font-size: 70px;
+	color: #fff;
+	line-height: 1;
+	display: block;
+	text-align: center;
+	padding: 0 0 20px 0;
+}
+
 .btnRegistration {
 	border: 3px solid #fff;
 	display: block;
