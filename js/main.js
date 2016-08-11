@@ -67,7 +67,7 @@ $(function(){
 	}
 
 	//new Date(year, month, day, hours, minutes, seconds, milliseconds)
-	var deadline = new Date(2016, 8, 3, 11);
+	var deadline = new Date(2016, 8, 3, 10);
 	initializeClock('timerToStart', deadline);
 
 });
