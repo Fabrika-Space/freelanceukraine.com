@@ -427,6 +427,10 @@ h1 {
 	position: relative;
 }
 
+.h2Agenda a {
+	font-family: 'kelson_sans_ruregular';
+}
+
 .h3Agenda {
 	font-family: 'kelson_sans_rulight';
 	font-size: 24px;
