@@ -1,6 +1,6 @@
-#!/bin/bash
+#!/bin/bash -ex
 
-ssh -v ubuntu@107.21.123.188 << EOF
+ssh -v ubuntu@freelanceukraine.com << EOF
 
   echo '1. Updating sources'
   cd ~/repos/freelanceukraine.com
